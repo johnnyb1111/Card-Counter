@@ -2,78 +2,156 @@
 <html lang="en">
 
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/favicons/manifest.json">
+    <link rel="shortcut icon" href="/favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="The Counter">
+    <meta name="application-name" content="The Counter">
+    <meta name="msapplication-TileColor" content="#4fc1e9">
+    <meta name="msapplication-TileImage" content="/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#4fc1e9">
 
     <title>The Counter — A Blackjack Utility</title>
 
-	<!-- Custom CSS -->
-	<link href="css/style.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <body>
-	
-<div class="navbar">
-	<div class="title">The Counter</div>
-</div>
 
-<div class="content">
-<h1>Card Value</h1>	
-	<ul class="card-buttons">
-		<li>10-A</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>	
-		<li>7</li>
-		<li>8</li>
-		<li>9</li>
-	</ul>
-<h1>Decks Remaining</h1>
-	<ul class="deck-buttons">
-		<li>1</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>	
-		<li>7</li>
-		<li>8</li>
-	</ul>
-<hr>
-<div id="output-container">
-	<div id="descriptor">
-		Running Count:
-	</div>
-	<div id="running-count">
-		8
-	</div>
-<br>
-	<div id="descriptor">
-		True Count:
-	</div>
-	<div id="true-count">
-		3
-	</div>
-<br>
-	<div id="descriptor">
-		Bet Amount:
-	</div>
-	<div id="bet-amount">
-		Bet 1x
-	</div>
-</div>
-<br><br>
-<input type="submit" value="Undo" class="undo-button">
-<input type="submit" value="Reset" class="reset-button">
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">The Counter</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+           <!--  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div> -->
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-</div>
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Heading -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">The Counter</h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+       <!-- Content Row --> 
+        <div class="row">
+            <div class="col-md-offset-2 col-md-8 col-lg-offset-3 col-lg-6">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                    <h4>Instructions</h4>
+                        <ol>
+                            <li>Select the number of decks remaining.</li>
+                            <li>Enter 2-9 for numbered cards. T for 10. J,Q,K,A (or 1) for face cards.</li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="tel" class="form-control" id="inputbox" placeholder="Enter your card value here">
+                    </li>
+                    <li class="list-group-item">
+                        <select class="form-control" id="select">
+                            <option value="selectDeck" disabled selected>Decks Remaining</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item">
+                        <span id="result" class="badge">0</span>
+                        Running Count
+                    </li>
+                    <li class="list-group-item">
+                        <span id="data" class="badge">0.0</span>
+                        True Count
+                    </li>
+                    <li class="list-group-item">
+                        <span id="bet" class="badge">Bet 1x</span>
+                        Bet Amount
+                    </li>
+                    <li class="list-group-item">
+                        <button value="clear" class="btn btn-danger btn-lg btn-block" onclick="resetValues()">Clear</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Yashar Sahaleh 2015</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Counter JavaScript -->
+    <script src="js/custom.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
