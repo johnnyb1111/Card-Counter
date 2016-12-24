@@ -210,6 +210,52 @@ button {
 	border-radius: 0;
 }
 
+/*Segmentation*/
+
+.segmented-control {
+  display: table;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.segmented-control__item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control__label {
+  display: block;
+  color: #ffffff;
+  margin: 0 -1px -1px 0;
+  /* -1px margin removes double-thickness borders between items */
+  padding: 1em .25em;
+  border: 1px solid #ddd;
+  font: 14px/1.5 sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.segmented-control__label:hover {
+  background: #fafafa;
+  color: #000000;
+}
+
+.segmented-control__input:checked + .segmented-control__label {
+  background: #eee;
+  color: #333;
+}
+
+
+
+
 /* Undo Button
 ==================================================*/
 .undo-button {
