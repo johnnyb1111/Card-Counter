@@ -55,15 +55,27 @@ input[type=search] {
   outline: 0;
 }
 
+html {
+	height: 100%;
+}
+
 body {
-	background: url("../images/bg.jpg") fixed center;
-	background-size: cover;
+	/*background: url("../images/bg.jpg") fixed center;*/
+	/*background-color: #277714;
+	background-size: cover;*/
+	background: rgb(31,112,70);
+	background: -moz-linear-gradient(-45deg,  rgba(31,112,70,1) 0%, rgba(56,144,110,1) 25%, rgba(55,147,125,1) 50%, rgba(39,136,124,1) 75%, rgba(30,111,115,1) 100%);
+	background: -webkit-linear-gradient(-45deg,  rgba(31,112,70,1) 0%,rgba(56,144,110,1) 25%,rgba(55,147,125,1) 50%,rgba(39,136,124,1) 75%,rgba(30,111,115,1) 100%);
+	background: linear-gradient(135deg,  rgba(31,112,70,1) 0%,rgba(56,144,110,1) 25%,rgba(55,147,125,1) 50%,rgba(39,136,124,1) 75%,rgba(30,111,115,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f7046', endColorstr='#1e6f73',GradientType=1 );
+	background-repeat: no-repeat;
 }
 
 body:after {
 	content: "";
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAYAAADphp8SAAAAHUlEQVQ4y2N4+vSpHgMUUMIehGDUa6NeG/UaXQAAvERV5wGBupEAAAAASUVORK5CYII=) repeat;
-    top: 0;
+    /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAYAAADphp8SAAAAHUlEQVQ4y2N4+vSpHgMUUMIehGDUa6NeG/UaXQAAvERV5wGBupEAAAAASUVORK5CYII=) repeat;*/
+/*    background: url("../images/felt.png") repeat;
+*/    top: 0;
     left: 0;
     bottom: 0;
     right: 0;
@@ -92,7 +104,7 @@ body:after {
 	left: 0;
 	right: 0;
 	height: 65px;
-	background-color: #000;
+	background-color: #072932;
 	z-index: 1;
 }
 
@@ -131,17 +143,25 @@ ul.card-buttons {
 	margin: 0 auto;
 }
 
+ul.card-buttons > li:hover {
+	color: #f5b919;
+}
+
 ul.card-buttons > li {
 	font-family: 'Lato', sans-serif;
 	font-size: 38px;
 	font-weight: 300;
-	line-height: 150px;
+	line-height: 130px;
 	display: inline-block;
 	margin: 10px;
-	width: 150px;
+	width: 130px;
+	height: 130px;
 	text-align: center;
-	background-color: #107f6a;
-	box-shadow: 5px 5px 0 0 #29535c;
+	background-clip: content-box;
+	background-color: #155439;
+	border: 4px solid #155439;
+	border-radius: 90px;
+	padding: 6px;
 }
 
 /*Deck Buttons*/
@@ -211,18 +231,13 @@ hr {
 	display: table-row;
 	font-size: 90%;
 }
-.divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
-}
 .divTableCell, .divTableHead {
 	border: 1px solid #999999;
 	display: table-cell;
 	padding: 3px 10px;
 }
 .divTableHeading {
-	background-color: #EEE;
-	display: table-header-group;
+	display: table-row;
 	font-weight: bold;
 }
 .divTableFoot {
@@ -278,19 +293,19 @@ button:focus {
   margin: 0 -1px -1px 0;
   /* -1px margin removes double-thickness borders between items */
   padding: 1em .25em;
-  border: 1px solid #ddd;
+  border: 1px solid #6aa49a;
   font: 14px/1.5 sans-serif;
   text-align: center;
   cursor: pointer;
 }
 
 .segmented-control__label:hover {
-  background: #fafafa;
+  background: #dd9418;
   color: #000000;
 }
 
 .segmented-control__input:checked + .segmented-control__label {
-  background: #eee;
+  background: #6aa49a;
   color: #333;
 }
 
