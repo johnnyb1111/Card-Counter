@@ -199,7 +199,7 @@ hr {
 	font-size: 90%;
 	display: table-cell;
 	padding-bottom: 10px;
-	color: #1f5745;
+	color: #155439;
 	font-weight: 600;
 }
 .divTableCell, .divTableHead {
@@ -263,7 +263,7 @@ button:focus {
   color: #ffffff;
   margin: 0 -1px -1px 0;
   padding: 1em .25em;
-  border: 1px solid #1f5745;
+  border: 1px solid #155439;
   font: 14px/1.5 sans-serif;
   text-align: center;
   cursor: pointer;
@@ -275,7 +275,7 @@ button:focus {
 }
 
 .segmented-control__input:checked + .segmented-control__label {
-  background: #1f5745;
+  background: #155439;
   color: #fff;
 }
 
