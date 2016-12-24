@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+  <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -11,97 +11,99 @@
 
     <title>The Counter — A Blackjack Utility</title>
 
-	<!-- Custom CSS -->
-	<link href="css/style.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
 
-</head>
+  </head>
 
-<body>
-	
-<div class="navbar">
-	<div class="title">The Counter</div>
-</div>
+  <body>
 
-<div class="content">
-<h1>Card Value</h1>	
-	<ul class="card-buttons">
-		<li>10-A</li>
-		<li>2</li>
-		<li>3</li>
-		<li>4</li>
-		<li>5</li>
-		<li>6</li>	
-		<li>7</li>
-		<li>8</li>
-		<li>9</li>
-	</ul>
-<h1>Decks Remaining</h1>
+    <div class="navbar">
+      <div class="title">The Counter</div>
+    </div>
 
-	<ul class="segmented-control">
-  <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="1" name="option" id="option-1" checked>
-    <label class="segmented-control__label" for="option-1">1</label>
-  </li>
-  <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="2" name="option" id="option-2">
-    <label class="segmented-control__label" for="option-2">2</label>
-  </li>
-   <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="3" name="option" id="option-3" checked>
-    <label class="segmented-control__label" for="option-3">3</label>
-  </li>
-   <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="4" name="option" id="option-4" checked>
-    <label class="segmented-control__label" for="option-4">4</label>
-  </li>
-   <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="5" name="option" id="option-5" checked>
-    <label class="segmented-control__label" for="option-5">5</label>
-  </li>
-   <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="6" name="option" id="option-6" checked>
-    <label class="segmented-control__label" for="option-6">6</label>
-  </li>
-   <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="7" name="option" id="option-7" checked>
-    <label class="segmented-control__label" for="option-7">7</label>
-  </li>
-   <li class="segmented-control__item">
-    <input class="segmented-control__input" type="radio" value="8" name="option" id="option-8" checked>
-    <label class="segmented-control__label" for="option-8">8</label>
-  </li>
-</ul>
+    <div class="content">
+      <h1>Card Value</h1>
+      <ul class="card-buttons">
+        <li><a href="#">10-A</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+      </ul>
+      <h1>Decks Remaining</h1>
 
-<br>
+      <ul class="segmented-control">
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="1" name="option" id="option-1" checked>
+          <label class="segmented-control__label" for="option-1">1</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="2" name="option" id="option-2">
+          <label class="segmented-control__label" for="option-2">2</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="3" name="option" id="option-3" checked>
+          <label class="segmented-control__label" for="option-3">3</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="4" name="option" id="option-4" checked>
+          <label class="segmented-control__label" for="option-4">4</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="5" name="option" id="option-5" checked>
+          <label class="segmented-control__label" for="option-5">5</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="6" name="option" id="option-6" checked>
+          <label class="segmented-control__label" for="option-6">6</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="7" name="option" id="option-7" checked>
+          <label class="segmented-control__label" for="option-7">7</label>
+        </li>
+        <li class="segmented-control__item">
+          <input class="segmented-control__input" type="radio" value="8" name="option" id="option-8" checked>
+          <label class="segmented-control__label" for="option-8">8</label>
+        </li>
+      </ul>
+
+      <br>
 
 
-<div class="divTable">
-<div class="divTableBody">
-<div class="divTableRow">
-<div class="divTableCellHeading">&nbsp;Running Count</div>
-<div class="divTableCellHeading">&nbsp;True Count</div>
-<div class="divTableCellHeading">&nbsp;Bet Amount</div>
-</div>
-<div class="divTableRow">
-<div id="result">0</div>
-<div id="data">0.0</div>
-<div id="bet">Bet 1x</div>
-</div>
-</div>
-</div>
+      <div class="divTable">
+        <div class="divTableBody">
+          <div class="divTableRow">
+            <div class="divTableCellHeading">&nbsp;Running Count</div>
+            <div class="divTableCellHeading">&nbsp;True Count</div>
+            <div class="divTableCellHeading">&nbsp;Bet Amount</div>
+          </div>
+          <div class="divTableRow">
+            <div id="result">0</div>
+            <div id="data">0.0</div>
+            <div id="bet">Bet 1x</div>
+          </div>
+        </div>
+      </div>
 
-<br><br>
-<input type="submit" value="Undo" class="undo-button">
-<input type="submit" value="Reset" class="reset-button" onclick="resetValues()">
-<br><br>
-</div>
+      <br>
+      <br>
+      <input type="submit" value="Undo" class="undo-button">
+      <input type="submit" value="Reset" class="reset-button" onclick="resetValues()">
+      <br>
+      <br>
+    </div>
 
-<!-- jQuery -->
-<script src="js/jquery.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
 
-<!-- Counter JavaScript -->
-<script src="js/custom.js"></script>
+    <!-- Counter JavaScript -->
+    <script src="js/custom.js"></script>
 
-</body>
+  </body>
 
 </html>
