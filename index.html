@@ -38,35 +38,35 @@
       <h1>Decks Remaining</h1>
 
       <ul class="segmented-control">
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount1()">
           <input class="segmented-control__input" type="radio" value="1" name="option" id="option-1" checked>
           <label class="segmented-control__label" for="option-1">1</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount2()">
           <input class="segmented-control__input" type="radio" value="2" name="option" id="option-2">
           <label class="segmented-control__label" for="option-2">2</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount3()">
           <input class="segmented-control__input" type="radio" value="3" name="option" id="option-3" checked>
           <label class="segmented-control__label" for="option-3">3</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount4()">
           <input class="segmented-control__input" type="radio" value="4" name="option" id="option-4" checked>
           <label class="segmented-control__label" for="option-4">4</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount5()">
           <input class="segmented-control__input" type="radio" value="5" name="option" id="option-5" checked>
           <label class="segmented-control__label" for="option-5">5</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount6()">
           <input class="segmented-control__input" type="radio" value="6" name="option" id="option-6" checked>
           <label class="segmented-control__label" for="option-6">6</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount7()">
           <input class="segmented-control__input" type="radio" value="7" name="option" id="option-7" checked>
           <label class="segmented-control__label" for="option-7">7</label>
         </li>
-        <li class="segmented-control__item">
+        <li class="segmented-control__item" onclick="deckCount8()">
           <input class="segmented-control__input" type="radio" value="8" name="option" id="option-8" checked>
           <label class="segmented-control__label" for="option-8">8</label>
         </li>
@@ -74,16 +74,15 @@
 
       <br>
 
-
       <div class="divTable">
         <div class="divTableBody">
           <div class="divTableRow">
-            <div class="divTableCellHeading">&nbsp;Running Count</div>
-            <div class="divTableCellHeading">&nbsp;True Count</div>
-            <div class="divTableCellHeading">&nbsp;Bet Amount</div>
+            <div class="divTableCellHeading">Running Count</div>
+            <div class="divTableCellHeading">True Count</div>
+            <div class="divTableCellHeading">Bet Amount</div>
           </div>
           <div class="divTableRow">
-            <div id="trueCount">0</div>
+            <div id="runningCount">0</div>
             <div id="data">0.0</div>
             <div id="bet">Bet 1x</div>
           </div>
