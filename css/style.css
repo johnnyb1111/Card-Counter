@@ -52,6 +52,7 @@ input[type=search] {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
+  outline: 0;
 }
 
 body {
@@ -175,7 +176,7 @@ hr {
 
 /*Outputs*/
 
-#output-container {
+/*#output-container {
 	font-family: 'Lato', sans-serif;
 	font-size: 22px;
 	color: #fff;
@@ -195,6 +196,42 @@ hr {
 #running-count, #true-count, #bet-amount {
 	float: right;
 	font-weight: 400;
+}*/
+
+
+.divTable{
+	display: table;
+	width: 90%;
+	margin: 0 auto;
+	color: #FFFFFF;
+	font-family: 'Lato', sans-serif;
+	text-align: center;
+}
+.divTableRow {
+	display: table-row;
+	font-size: 90%;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+}
+.divTableCell, .divTableHead {
+	border: 1px solid #999999;
+	display: table-cell;
+	padding: 3px 10px;
+}
+.divTableHeading {
+	background-color: #EEE;
+	display: table-header-group;
+	font-weight: bold;
+}
+.divTableFoot {
+	background-color: #EEE;
+	display: table-footer-group;
+	font-weight: bold;
+}
+.divTableBody {
+	display: table-row-group;
 }
 
 button {
@@ -208,6 +245,10 @@ button {
 	appearance: none;
 	box-shadow: none;
 	border-radius: 0;
+}
+
+button:focus {
+	outline: 0;
 }
 
 /*Segmentation*/
@@ -269,12 +310,9 @@ button {
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #3498db;
+  background: #dd9418;
   border: 0;
-  border-bottom: 2px solid #2a8bcc;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #2a8bcc;
-  box-shadow: inset 0 -2px #2a8bcc;
 }
 .undo-button:active {
   top: 1px;
@@ -296,12 +334,9 @@ button {
   color: white;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  background: #c0392b;
+  background: #d44052;
   border: 0;
-  border-bottom: 2px solid #b53224;
   cursor: pointer;
-  -webkit-box-shadow: inset 0 -2px #b53224;
-  box-shadow: inset 0 -2px #b53224;
 }
 .reset-button:active {
   top: 1px;
