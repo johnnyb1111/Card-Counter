@@ -49,9 +49,9 @@ input[type=search] {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
-  border-radius: 0;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
   outline: 0;
 }
 
@@ -60,9 +60,6 @@ html {
 }
 
 body {
-	/*background: url("../images/bg.jpg") fixed center;*/
-	/*background-color: #277714;
-	background-size: cover;*/
 	background: rgb(31,112,70);
 	background: -moz-linear-gradient(-45deg,  rgba(31,112,70,1) 0%, rgba(56,144,110,1) 25%, rgba(55,147,125,1) 50%, rgba(39,136,124,1) 75%, rgba(30,111,115,1) 100%);
 	background: -webkit-linear-gradient(-45deg,  rgba(31,112,70,1) 0%,rgba(56,144,110,1) 25%,rgba(55,147,125,1) 50%,rgba(39,136,124,1) 75%,rgba(30,111,115,1) 100%);
@@ -71,20 +68,7 @@ body {
 	background-repeat: no-repeat;
 }
 
-body:after {
-	content: "";
-    /*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAPCAYAAADphp8SAAAAHUlEQVQ4y2N4+vSpHgMUUMIehGDUa6NeG/UaXQAAvERV5wGBupEAAAAASUVORK5CYII=) repeat;*/
-/*    background: url("../images/felt.png") repeat;
-*/    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    z-index: -1;   
-}
-
 .content {
-	/*background-color: rgba(255, 255, 255, 0.7);*/
 	background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6-15 */
 	background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.85) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
@@ -129,6 +113,7 @@ h1 {
 	font-size: 20px;
 	color: #fff;
 	font-weight: 300;
+	letter-spacing: 4px;
 }
 
 /*Card Buttons*/
@@ -195,28 +180,6 @@ hr {
 }
 
 /*Outputs*/
-
-/*#output-container {
-	font-family: 'Lato', sans-serif;
-	font-size: 22px;
-	color: #fff;
-	font-weight: 300;
-	padding-left: 20px;
-	padding-right: 20px;
-}
-
-#descriptor, #running-count, #true-count, #bet-amount {
-	display: inline;
-}
-
-#descriptor {
-	float: left;
-}
-
-#running-count, #true-count, #bet-amount {
-	float: right;
-	font-weight: 400;
-}*/
 
 
 .divTable{
@@ -323,9 +286,10 @@ button:focus {
 ==================================================*/
 .undo-button {
   position: relative;
-  float: left;
+/*  float: left;*/
   vertical-align: top;
-  width: 50%;
+  width: 30%;
+  margin-left: 10%;
   height: 60px;
   padding: 0;
   font-size: 22px;
@@ -351,7 +315,8 @@ button:focus {
   position: relative;
   float: right;
   vertical-align: top;
-  width: 50%;
+  width: 30%;
+  margin-right: 10%;
   height: 60px;
   padding: 0;
   font-size: 22px;
