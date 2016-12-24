@@ -88,7 +88,7 @@ body {
 	left: 0;
 	right: 0;
 	height: 65px;
-	background-color: #072932;
+	background-color: #000;
 	z-index: 1;
 }
 
@@ -243,6 +243,7 @@ button:focus {
   width: 90%;
   margin: 0 auto;
   padding: 0;
+  margin-top: 10px;
 }
 
 .segmented-control__item {
@@ -261,24 +262,22 @@ button:focus {
   display: block;
   color: #ffffff;
   margin: 0 -1px -1px 0;
-  /* -1px margin removes double-thickness borders between items */
   padding: 1em .25em;
-  border: 1px solid #6aa49a;
+  border: 1px solid #1f5745;
   font: 14px/1.5 sans-serif;
   text-align: center;
   cursor: pointer;
 }
 
 .segmented-control__label:hover {
-  background: #dd9418;
+  background: #2f866a;
   color: #000000;
 }
 
 .segmented-control__input:checked + .segmented-control__label {
-  background: #6aa49a;
-  color: #333;
+  background: #1f5745;
+  color: #fff;
 }
-
 
 
 
@@ -365,14 +364,14 @@ button:focus {
 
 	ul.card-buttons > li {
 	font-family: 'Lato', sans-serif;
-	font-size: 26px;
-	line-height: 70px;
+	font-size: 18px;
+	line-height: 50px;
 	display: inline-block;
-	margin: 6px;
-	width: 78px;
-	height: 70px;
+	margin: 10px;
+	width: 50px;
+	height: 50px;
 	text-align: center;
-	background-color: #000;
+	background-color: #155439;
 	}
 
 	/*Mobile Deck Buttons*/
