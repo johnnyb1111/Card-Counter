@@ -56,6 +56,15 @@ body {
   background-repeat: no-repeat;
 }
 
+a.helpIcon {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    text-align: right;
+    margin-right: 24px;
+    padding-top: 16px;
+}
+
 .content {
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.85) 100%);
   /* FF3.6-15 */
@@ -68,7 +77,6 @@ body {
   margin: 0 auto;
   margin-top: 90px;
   box-sizing: border-box;
-  padding-top: 20px;
   width: 95%;
   max-width: 700px;
   max-height: 90%;
@@ -109,6 +117,57 @@ h1 {
   letter-spacing: 4px;
 }
 
+h1.firstHeader {
+    margin-top: 0px;
+}
+
+h1.modalHeader {
+  margin-top: 0px;
+  color: #000000;
+  font-weight: 400;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+a.credits {
+  display: initial;
+  font-weight: 300;
+}
+
+ol {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+ol span {
+/*  position: relative;
+  left: -10px;*/
+}
+
+.listContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+p.listItem {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
 
 /*Card Buttons*/
 
@@ -166,15 +225,6 @@ ul.deck-buttons > li {
   text-align: center;
   background-color: #000;
 }
-
-
-/*Horizontal Rule*/
-
-hr {
-  border-top: 1px solid #8c8b8b;
-  max-width: 90%;
-}
-
 
 /*Outputs*/
 
@@ -376,7 +426,30 @@ button:focus {
   h1 {
     margin-top: 0px;
     margin-bottom: 0px;
+    font-size: 16px;
   }
+
+  h1.modalHeader {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .modalCredits {
+    margin-bottom: 0px;
+  }
+
+  a.helpIcon {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
   br.mobileHide {
       display: none;
     }
@@ -385,17 +458,22 @@ button:focus {
       margin: 8px;
     }
   .navbar {
-    height: 55px;
+    height: 50px;
   }
 
   .navbar .title {
     font-size: 20px;
-    margin: 14px;
+    margin: 12px;
+  }
+
+  .listContainer {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 
   .content {
-    margin-top: 55px;
-    padding-top: 10px;
+    margin-top: 50px;
+    padding-top: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 3px;
@@ -455,6 +533,15 @@ button:focus {
 }
 
 @media only screen and (max-width:371px) {
+  .remodal.remodal-is-initialized.remodal-is-opened {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  .listContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
   .navbar {
     height: 45px;
     }
@@ -464,7 +551,7 @@ button:focus {
     }
   .content {
     margin-top: 45px;
-    padding-top: 10px;
+    padding-top: 0px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 3px;
@@ -473,6 +560,10 @@ button:focus {
   h1 {
     font-size: 12px;
   }
+  a.helpIcon {
+    font-size: 16px;
+  }
+
   .divTable {
     padding-bottom: 10px;
   }
@@ -491,16 +582,16 @@ button:focus {
     font-size: 16px; 
     }
     ul.card-buttons {
-      max-width: 218px;
-      padding-left: 34px;
-      padding-right: 34px;
+      max-width: 204px;
+      padding-left: 42px;
+      padding-right: 42px;
     }
     ul.card-buttons > li {
       margin: 5px;
-      font-size: 14px;
-      line-height: 40px;
-      width: 40px;
-      height: 40px;
+      font-size: 13px;
+      line-height: 35px;
+      width: 35px;
+      height: 35px;
     }
     br.mobileHide {
       display: none;
