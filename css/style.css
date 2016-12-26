@@ -377,14 +377,47 @@ button:focus {
     margin-top: 0px;
     margin-bottom: 0px;
   }
-  .content {
-    margin-top: 84px;
+  br.mobileHide {
+      display: none;
+    }
+    br.miniSpacing {
+      display: block;
+      margin: 8px;
+    }
+  .navbar {
+    height: 55px;
   }
+
+  .navbar .title {
+    font-size: 20px;
+    margin: 14px;
+  }
+
+  .content {
+    margin-top: 55px;
+    padding-top: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .segmented-control {
+    padding-bottom: 8px;
+  }
+  .segmented-control__label {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .divTable {
+    padding-bottom: 8px;
+  }
+
   .undo-button {
-    height: 50px;
+    height: 40px;
   }
   .reset-button {
-    height: 50px;
+    height: 40px;
   }
   /*Mobile Card Buttons*/
   ul.card-buttons {
