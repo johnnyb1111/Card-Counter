@@ -2,8 +2,8 @@
 A web utility that will assist the Blackjack card counting process. For entertainment purposes only.
 
 ## How to use
-1. Select the number of decks remaining in the "shoe".
-2. In the empty field, enter 2-9 for numbered cards. T for 10. J,Q,K,A (or 1) for face cards.
+1. Select the number of decks remaining.
+2. Click/Tap the value of each card dealt.
 
 ### Definitions
 * **Running Count:** The count derived by adding or subtracting every card that you see in each shoe
