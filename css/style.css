@@ -223,7 +223,7 @@ hr {
   padding: 3px 10px;
 }
 
-#data {
+#trueCount {
   display: table-cell;
   padding: 3px 10px;
 }
@@ -319,7 +319,7 @@ button:focus {
   vertical-align: top;
   width: 30%;
   margin-left: 10%;
-  height: 60px;
+  height: 50px;
   padding: 0;
   font-size: 22px;
   color: white;
@@ -349,7 +349,7 @@ button:focus {
   vertical-align: top;
   width: 30%;
   margin-right: 10%;
-  height: 60px;
+  height: 50px;
   padding: 0;
   font-size: 22px;
   color: white;
@@ -389,6 +389,8 @@ button:focus {
   /*Mobile Card Buttons*/
   ul.card-buttons {
     max-width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
   }
   ul.card-buttons > li {
     font-family: 'Lato', sans-serif;
@@ -418,3 +420,59 @@ button:focus {
     background-color: #000;
   }
 }
+
+@media only screen and (max-width:371px) {
+  .navbar {
+    height: 45px;
+    }
+  .navbar .title {
+    font-size: 16px;
+    margin: 12px;
+    }
+  .content {
+    margin-top: 45px;
+    padding-top: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+  h1 {
+    font-size: 12px;
+  }
+  .divTable {
+    padding-bottom: 10px;
+  }
+  .segmented-control {
+    padding-bottom: 10px;
+  }
+  .segmented-control__label {
+    padding: .5em .25em;
+    }
+  .undo-button {
+    height: 30px;
+    font-size: 16px;
+    }
+  .reset-button {
+    height: 30px;
+    font-size: 16px; 
+    }
+    ul.card-buttons {
+      max-width: 218px;
+      padding-left: 34px;
+      padding-right: 34px;
+    }
+    ul.card-buttons > li {
+      margin: 5px;
+      font-size: 14px;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+    }
+    br.mobileHide {
+      display: none;
+    }
+    .divTableCellHeading {
+      font-size: 80%;
+    }
+  }

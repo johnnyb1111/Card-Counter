@@ -65,7 +65,3 @@ function resetValues() {
   $('#trueCount').text('0.0');
   $('#bet').text('Bet 1x');
 };
-
-
-
-// var trueCount = deckCount/count;
