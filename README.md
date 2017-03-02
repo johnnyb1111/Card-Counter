@@ -1,7 +1,7 @@
 # The Counter
 A web utility that will assist the Blackjack card counting process. For entertainment purposes only.
 
-![Demo Screenshot](http://i.imgur.com/FpIjtgW.png)
+![Demo Screenshot](http://i.imgur.com/FpIjtgW.png | width=400)
 
 ## How to use
 1. Select the number of decks remaining.
