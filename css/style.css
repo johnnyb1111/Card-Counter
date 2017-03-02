@@ -1,0 +1,788 @@
+@font-face {
+  font-family: 'Lato';
+  font-weight: 100;
+  font-style: normal;
+  src: url('../fonts/Lato-100/Lato-100.eot');
+  src: url('../fonts/Lato-100/Lato-100.eot?#iefix') format('embedded-opentype'), local('Lato Hairline'), local('Lato-100'), url('../fonts/Lato-100/Lato-100.woff2') format('woff2'), url('../fonts/Lato-100/Lato-100.woff') format('woff'), url('../fonts/Lato-100/Lato-100.ttf') format('truetype'), url('../fonts/Lato-100/Lato-100.svg#Lato') format('svg');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 300;
+  font-style: normal;
+  src: url('../fonts/Lato-300/Lato-300.eot');
+  src: url('../fonts/Lato-300/Lato-300.eot?#iefix') format('embedded-opentype'), local('Lato Light'), local('Lato-300'), url('../fonts/Lato-300/Lato-300.woff2') format('woff2'), url('../fonts/Lato-300/Lato-300.woff') format('woff'), url('../fonts/Lato-300/Lato-300.ttf') format('truetype'), url('../fonts/Lato-300/Lato-300.svg#Lato') format('svg');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-weight: 400;
+  font-style: normal;
+  src: url('../fonts/Lato-regular/Lato-regular.eot');
+  src: url('../fonts/Lato-regular/Lato-regular.eot?#iefix') format('embedded-opentype'), local('Lato Regular'), local('Lato-regular'), url('../fonts/Lato-regular/Lato-regular.woff2') format('woff2'), url('../fonts/Lato-regular/Lato-regular.woff') format('woff'), url('../fonts/Lato-regular/Lato-regular.ttf') format('truetype'), url('../fonts/Lato-regular/Lato-regular.svg#Lato') format('svg');
+}
+
+input[type=text],
+input[type=submit],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=search] {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  outline: 0;
+}
+
+html {
+  height: 100%;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  background: rgb(31, 112, 70);
+  background: -moz-linear-gradient(-45deg, rgba(31, 112, 70, 1) 0%, rgba(56, 144, 110, 1) 25%, rgba(55, 147, 125, 1) 50%, rgba(39, 136, 124, 1) 75%, rgba(30, 111, 115, 1) 100%);
+  background: -webkit-linear-gradient(-45deg, rgba(31, 112, 70, 1) 0%, rgba(56, 144, 110, 1) 25%, rgba(55, 147, 125, 1) 50%, rgba(39, 136, 124, 1) 75%, rgba(30, 111, 115, 1) 100%);
+  background: linear-gradient(135deg, rgba(31, 112, 70, 1) 0%, rgba(56, 144, 110, 1) 25%, rgba(55, 147, 125, 1) 50%, rgba(39, 136, 124, 1) 75%, rgba(30, 111, 115, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#1f7046', endColorstr='#1e6f73', GradientType=1);
+  background-repeat: no-repeat;
+}
+
+a.helpIcon {
+    color: #ffffff;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    text-align: right;
+    margin-right: 24px;
+    padding-top: 16px;
+}
+
+.content {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.85) 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.85) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.85) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#cc000000', GradientType=0);
+  /* IE6-9 */
+  margin: 0 auto;
+  margin-top: 90px;
+  box-sizing: border-box;
+  width: 95%;
+  max-width: 700px;
+  max-height: 90%;
+  border-radius: 3px;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 65px;
+  background-color: #000;
+  z-index: 1;
+}
+
+.navbar .title {
+  font-family: 'Lato', sans-serif;
+  position: absolute;
+  left: 44px;
+  right: 44px;
+  text-align: center;
+  font-size: 22px;
+  margin: 16px;
+  color: #fff;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 4px;
+}
+
+h1.firstHeader {
+    margin-top: 0px;
+}
+
+h1.modalHeader {
+  margin-top: 0px;
+  color: #000000;
+  font-weight: 400;
+}
+
+h2 {
+  color: #000000;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+a.credits {
+  display: initial;
+  font-weight: 300;
+}
+
+ol {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+ol span {
+/*  position: relative;
+  left: -10px;*/
+}
+
+.listContainer {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+p.listItem {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+/*Card Buttons*/
+
+ul.card-buttons {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 520px;
+  list-style: none;
+  color: #fff;
+  text-align: left;
+  margin: 0 auto;
+}
+
+ul.card-buttons > li:hover {
+  color: #f5b919;
+}
+
+ul.card-buttons > li {
+  font-family: 'Lato', sans-serif;
+  font-size: 38px;
+  font-weight: 300;
+  line-height: 130px;
+  display: inline-block;
+  margin: 10px;
+  width: 130px;
+  height: 130px;
+  text-align: center;
+  background-clip: content-box;
+  background-color: #155439;
+  border: 4px solid #155439;
+  border-radius: 90px;
+  padding: 6px;
+}
+
+
+/*Deck Buttons*/
+
+ul.deck-buttons {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 520px;
+  list-style: none;
+  color: #fff;
+  text-align: left;
+  margin: 0 auto;
+}
+
+ul.deck-buttons > li {
+  font-family: 'Lato', sans-serif;
+  font-size: 26px;
+  line-height: 70px;
+  display: inline-block;
+  margin: 8px;
+  width: 45px;
+  text-align: center;
+  background-color: #000;
+}
+
+/*Outputs*/
+
+.divTable {
+  display: table;
+  width: 90%;
+  margin: 0 auto;
+  color: #FFFFFF;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.divTableRow {
+  display: table-row;
+  font-size: 90%;
+}
+
+.divTableCellHeading {
+  border-bottom: 1px solid #5eab98;
+  font-size: 90%;
+  display: table-cell;
+  padding-bottom: 10px;
+  color: #155439;
+  font-weight: 600;
+}
+
+.divTableCell,
+.divTableHead {
+  display: table-cell;
+  padding: 3px 10px;
+}
+
+#divTableCell,
+#divTableHead {
+  display: table-cell;
+  padding: 3px 10px;
+}
+
+#divTableCell {
+  display: table-cell;
+  padding: 3px 10px;
+}
+
+#result {
+  display: table-cell;
+  padding: 3px 10px;
+}
+
+#trueCount {
+  display: table-cell;
+  padding: 3px 10px;
+}
+
+#bet {
+  display: table-cell;
+  padding: 3px 10px;
+}
+
+.divTableHeading {
+  display: table-row;
+  font-weight: bold;
+}
+
+.divTableFoot {
+  background-color: #EEE;
+  display: table-footer-group;
+  font-weight: bold;
+}
+
+.divTableBody {
+  display: table-row-group;
+}
+
+button {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  padding: 15px 45px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.8;
+  appearance: none;
+  box-shadow: none;
+  border-radius: 0;
+}
+
+button:focus {
+  outline: 0;
+}
+
+
+/*Segmentation*/
+
+.segmented-control {
+  display: table;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.segmented-control__item {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.segmented-control__input {
+  position: absolute;
+  visibility: hidden;
+}
+
+.segmented-control__label {
+  display: block;
+  color: #ffffff;
+  margin: 0 -1px -1px 0;
+  padding: 1em .25em;
+  border: 1px solid #155439;
+  font: 14px/1.5 sans-serif;
+  text-align: center;
+  cursor: pointer;
+}
+
+.segmented-control__label:hover {
+  background: #2f866a;
+  color: #000000;
+}
+
+.segmented-control__input:checked + .segmented-control__label {
+  background: #155439;
+  color: #fff;
+}
+
+
+/* Undo Button
+==================================================*/
+
+.undo-button {
+  position: relative;
+  /*  float: left;*/
+  vertical-align: top;
+  width: 30%;
+  margin-left: 10%;
+  height: 50px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #dd9418;
+  border: 0;
+  cursor: pointer;
+}
+
+.undo-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/* Reset Button
+==================================================*/
+
+.reset-button {
+  position: relative;
+  vertical-align: top;
+  width: 80%;
+  margin-left: 10%;
+  height: 50px;
+  padding: 0;
+  font-size: 22px;
+  color: white;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #d44052;
+  border: 0;
+  cursor: pointer;
+}
+
+.reset-button:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+/*Mobile Sizing*/
+
+@media only screen and (max-height:940px) {
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  h1.modalHeader {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .modalCredits {
+    margin-bottom: 0px;
+  }
+
+  a.helpIcon {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  br.mobileHide {
+      display: none;
+    }
+    br.miniSpacing {
+      display: block;
+      margin: 8px;
+    }
+  .navbar {
+    height: 50px;
+  }
+
+  .navbar .title {
+    font-size: 20px;
+    margin: 12px;
+  }
+
+  .listContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .content {
+    margin-top: 50px;
+    padding-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .segmented-control {
+    padding-bottom: 8px;
+  }
+  .segmented-control__label {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .divTable {
+    padding-bottom: 8px;
+  }
+
+  .undo-button {
+    height: 40px;
+  }
+  .reset-button {
+    height: 40px;
+  }
+  /*Mobile Card Buttons*/
+  ul.card-buttons {
+    max-width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  ul.card-buttons > li {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    display: inline-block;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #155439;
+  }
+  /*Mobile Deck Buttons*/
+  ul.deck-buttons {
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul.deck-buttons > li {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    line-height: 50px;
+    display: inline-block;
+    margin: 2px;
+    width: 30px;
+    text-align: center;
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-height:558px) {
+  .remodal.remodal-is-initialized.remodal-is-opened {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  .listContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navbar {
+    height: 45px;
+    }
+  .navbar .title {
+    font-size: 16px;
+    margin: 12px;
+    }
+  .content {
+    margin-top: 45px;
+    padding-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+  h1 {
+    font-size: 12px;
+  }
+  a.helpIcon {
+    font-size: 16px;
+  }
+
+  .divTable {
+    padding-bottom: 10px;
+  }
+  .segmented-control {
+    padding-bottom: 10px;
+  }
+  .segmented-control__label {
+    padding: .5em .25em;
+    }
+  .undo-button {
+    height: 30px;
+    font-size: 16px;
+    }
+  .reset-button {
+    height: 30px;
+    font-size: 16px; 
+    }
+    ul.card-buttons {
+      max-width: 204px;
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+    ul.card-buttons > li {
+      margin: 5px;
+      font-size: 13px;
+      line-height: 35px;
+      width: 35px;
+      height: 35px;
+    }
+    br.mobileHide {
+      display: none;
+    }
+    br.miniSpacing {
+      display: block;
+      margin: 10px;
+    }
+    .divTableCellHeading {
+      font-size: 80%;
+    }
+  }
+
+@media only screen and (max-width:624px) {
+  h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+  }
+
+  h1.modalHeader {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 14px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  .modalCredits {
+    margin-bottom: 0px;
+  }
+
+  a.helpIcon {
+    padding-top: 5px;
+    font-size: 18px;
+  }
+
+  br.mobileHide {
+      display: none;
+    }
+    br.miniSpacing {
+      display: block;
+      margin: 8px;
+    }
+  .navbar {
+    height: 45px;
+  }
+
+  .navbar .title {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .listContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .content {
+    margin-top: 45px;
+    padding-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  .segmented-control {
+    padding-bottom: 8px;
+  }
+  .segmented-control__label {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  .divTable {
+    padding-bottom: 8px;
+  }
+
+  .undo-button {
+    height: 40px;
+  }
+  .reset-button {
+    height: 40px;
+  }
+  /*Mobile Card Buttons*/
+  ul.card-buttons {
+    max-width: 280px;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  ul.card-buttons > li {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    line-height: 50px;
+    display: inline-block;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #155439;
+  }
+  /*Mobile Deck Buttons*/
+  ul.deck-buttons {
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  ul.deck-buttons > li {
+    font-family: 'Lato', sans-serif;
+    font-size: 26px;
+    line-height: 50px;
+    display: inline-block;
+    margin: 2px;
+    width: 30px;
+    text-align: center;
+    background-color: #000;
+  }
+}
+
+@media only screen and (max-width:371px) {
+  .remodal.remodal-is-initialized.remodal-is-opened {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+  }
+  .listContainer {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .navbar {
+    height: 45px;
+    }
+  .navbar .title {
+    font-size: 16px;
+    margin: 12px;
+    }
+  .content {
+    margin-top: 45px;
+    padding-top: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    }
+  h1 {
+    font-size: 12px;
+  }
+  a.helpIcon {
+    font-size: 16px;
+  }
+
+  .divTable {
+    padding-bottom: 10px;
+  }
+  .segmented-control {
+    padding-bottom: 10px;
+  }
+  .segmented-control__label {
+    padding: .5em .25em;
+    }
+  .undo-button {
+    height: 30px;
+    font-size: 16px;
+    }
+  .reset-button {
+    height: 30px;
+    font-size: 16px; 
+    }
+    ul.card-buttons {
+      max-width: 204px;
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+    ul.card-buttons > li {
+      margin: 5px;
+      font-size: 13px;
+      line-height: 35px;
+      width: 35px;
+      height: 35px;
+    }
+    br.mobileHide {
+      display: none;
+    }
+    br.miniSpacing {
+      display: block;
+      margin: 10px;
+    }
+    .divTableCellHeading {
+      font-size: 80%;
+    }
+  }
