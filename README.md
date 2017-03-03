@@ -21,4 +21,4 @@ A Blackjack card-counting calculator that provides Running Count, True Count, an
     * True count >= 6 and < 8 = Bet 4x
     * True count >= 8 = Bet 5x
     
-_For fun and entertainment only. Do not use where illegal._
+_For fun and entertainment only. Do not use where illegal or frowned upon._
