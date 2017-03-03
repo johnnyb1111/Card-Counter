@@ -1,5 +1,5 @@
 # The Counter
-A web utility that will assist the Blackjack card counting process. For entertainment purposes only.
+A Blackjack card-counting calculator that provides Running Count, True Count, and Bet Amounts in realtime. 
 
 <img src="http://i.imgur.com/FpIjtgW.png" width="512">
 
@@ -20,3 +20,4 @@ A web utility that will assist the Blackjack card counting process. For entertai
     * True count >= 4 and < 6 = Bet 3x
     * True count >= 6 and < 8 = Bet 4x
     * True count >= 8 = Bet 5x
+_For fun and entertainment only. Do not use where illegal._
